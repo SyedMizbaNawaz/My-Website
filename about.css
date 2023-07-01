@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height:100vh ;
+    background-color: linear-gradient(rgba(0,0,0,0.70));
+    background-image: linear-gradient(rgba(172, 166, 166, 0.7)),url(mypic.jpg);
+    background-position: center;
+    background-repeat: cover;
+}
+.hero{
+    width: 80%;
+    margin: auto;
+    padding:30px 0px;
+
+}
+article h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:black;
+}
+article h2::after{
+    content: "";
+    height: 3px;
+    width:225px;
+    background-color: #fcba03;
+    display: block;
+    margin: auto;
+}
+img{
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    height:220px;
+    width:220px;
+    border-radius:50%;
+    border:3px solid #bef4f7;
+}
+content{
+    font-size: 17px;
+    
+}

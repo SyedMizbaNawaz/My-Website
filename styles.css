@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;              
+    background-image: url(img1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-size: 100% 100%;
+}
+.text-box{
+    width:90%;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: left;
+}
+.text-box h1{
+    font-size:98%;
+    color: rgb(6, 6, 88);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size :80%;
+}
+.text-box h1:hover{
+    color: blueviolet;
+}
+.text-box p:hover{
+    color: rgb(117, 19, 19);
+}
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General styles end */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c3761;
+    padding-block: 15px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a:hover{
+  font-weight: bold;
+}
+.logo {
+    margin-right: 50px;
+    
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+    .ri-menu-line{
+        color: #fff;
+    }
+}
