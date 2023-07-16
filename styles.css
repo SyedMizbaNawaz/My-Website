@@ -8,7 +8,7 @@
 .header{
     width: 100%;
     height: 100vh;              
-    background-image: url(img1.png);
+    background-image: url(website-backgrnd.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,12 +58,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #0c3761;
+    background-color:transparent;
     padding-block: 15px;
 }
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #450be5;
 }
 .navbar a:hover{
   font-weight: bold;
