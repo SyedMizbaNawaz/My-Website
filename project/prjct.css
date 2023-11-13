@@ -1,8 +1,19 @@
 body{
     display: flex;
    
-    align-items: flex-start;
+    
+    align-items: center;
     min-height:100vh;
+}
+h1{
+    background-color: #2cd3bf;
+    display: flex;
+    
+}
+h2{
+   
+    background-color: beige;
+    text-decoration: solid;
 }
 .card{
     position: relative;
@@ -13,6 +24,7 @@ body{
    flex-wrap: wrap;
     background-color: #d7caca;
     border-radius: 19px;
+    justify-content: center;
 }
 .card-image{
     display: block;
