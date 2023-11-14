@@ -10,7 +10,7 @@ body {
   background: #222;
   text-align: center;
   font-family: 'Roboto Mono';
-  
+  min-height: 100vh;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
     position: relative;
     >.front,
     >.back {
-        display: block;
+        display: flex;
         transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
         transition-duration: .5s;
         transition-property: transform, opacity;
@@ -63,12 +63,6 @@ h1 {
         }
     }
 }
-#id1{
-  width:50%;
-  height:auto;
-  font-size: smaller;
-  overflow: hidden;
-}
 .front{
     width: 40%;
     height: 50%;
@@ -101,24 +95,18 @@ h1 {
 .text-shadow {
 text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
-@media only screen and (max-width: 400px) {
-    #id1{
-        
-        width:50%;
-        height:auto;
-        font-size: smaller;
-        overflow: hidden;
-        object-fit: fill;
-      }
+@media only screen and (max-width: 700px) {  
     .flip{
     
         width: 100%;
+        height: auto;
+        object-fit: fill;
     }
     .front{
-        width: 60%;
-        height: 50%;
+        max-width:100%;
+        height:auto;
         object-fit: fill;
-        display: inline;
+        display: flex;
     }
     .back{
         font-size: x-small;
