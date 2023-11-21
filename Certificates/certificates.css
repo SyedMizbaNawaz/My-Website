@@ -95,7 +95,6 @@ h1{
     font-size: 2 rem;
     overflow: hidden;
     object-fit: fill;
-    font-display: small;
     text-size-adjust: 40%;
   }
 }
