@@ -76,7 +76,13 @@ h1{
 .flip-main .flip-card:hover .flip-card-inner{
    transform: rotateY(180deg);
 }
+h5{
+		text-align: center;
+		text-decoration: underline;
+		font-weight: bold;
+		color: aliceblue;
 
+}
 /*responsive*/
 @media(max-width: 991px){
   .flip-main .flip-card {
